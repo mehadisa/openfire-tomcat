@@ -541,24 +541,25 @@
         </td>
     </tr>
     <% } %>
+    <!-- TODO : WEBVINE -->
     <tr>
-        <td><%= adminConsolePlugin.getBindInterface() == null ? LocaleUtils.getLocalizedString("ports.all_ports") : adminConsolePlugin.getBindInterface() %></td>
-        <td><%= adminConsolePlugin.getAdminUnsecurePort() %></td>
+        <td><% //adminConsolePlugin.getBindInterface() == null ? LocaleUtils.getLocalizedString("ports.all_ports") : adminConsolePlugin.getBindInterface() %></td>
+        <td><% //adminConsolePlugin.getAdminUnsecurePort() %></td>
         <td><img src="images/blank.gif" width="1" height="1" alt=""></td>
         <td><fmt:message key="ports.admin_console" /></td>
         <td><fmt:message key="ports.admin_console.desc_unsecured" /></td>
     </tr>
     <%
-        if (adminConsolePlugin.getAdminSecurePort() > 0) {
+        //if (adminConsolePlugin.getAdminSecurePort() > 0) {
     %>
     <tr>
-        <td><%= adminConsolePlugin.getBindInterface() == null ? LocaleUtils.getLocalizedString("ports.all_ports") : adminConsolePlugin.getBindInterface() %></td>
-        <td><%= adminConsolePlugin.getAdminSecurePort() %></td>
+        <td><% //adminConsolePlugin.getBindInterface() == null ? LocaleUtils.getLocalizedString("ports.all_ports") : adminConsolePlugin.getBindInterface() %></td>
+        <td><% //adminConsolePlugin.getAdminSecurePort() %></td>
         <td><img src="images/lock.gif" width="16" height="16" border="0" alt=""/></td>
         <td><fmt:message key="ports.admin_console" /></td>
         <td><fmt:message key="ports.admin_console.desc_secured" /></td>
     </tr>
-    <% } %>
+    <% //} %>
     <%
         if (fileTransferProxy.isProxyEnabled()) {
     %>
