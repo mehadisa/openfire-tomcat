@@ -1,0 +1,1 @@
+Embedded Openfire into tomcat
